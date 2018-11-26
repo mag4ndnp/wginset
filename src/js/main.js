@@ -40,12 +40,15 @@ const loadConfig = (a, b) => {
       configExtensions.push(nameLinear);
     }
 
-    return {
+    let returnObj = {
       type: glType,
       arrayType: arrayType,
       linearSupport: linearSupport,
       extensions: configExtensions
     };
+
+
+    return returnObj;
   }
 
   configs.push(

@@ -42,12 +42,16 @@
         configExtensions.push(nameLinear);
       }
 
-      return {
+      var returnObj = {
         type: glType,
         arrayType: arrayType,
         linearSupport: linearSupport,
         extensions: configExtensions
       };
+
+      console.log(returnObj);
+
+      return returnObj;
     };
 
     configs.push(createConfig('float', gl.FLOAT, Float32Array));
